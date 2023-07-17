@@ -42,6 +42,8 @@ def repo_to_text(
     # If your repo contains non-text files (e.g., images or binary files), more sophisticated filtering might be required
     all_files = []
     for root, dirs, files in os.walk(repo_path):
+        if ".git" in dirs:
+            dirs.remove(".git")  # Don't visit .git directories
         all_files.extend(os.path.join(root, file) for file in files)
 
     print('all_files' , all_files)
