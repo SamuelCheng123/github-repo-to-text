@@ -14,8 +14,10 @@ python3 /Users/{yourusername}/Desktop/Github/repo-to-text.py "$@"
 }
 ```
 
-這樣就完成了，以後可以直接在 zsh 當中輸入
+這樣就完成了，以後可以直接在 zsh 當中輸入想要讀取的 github repo url
+ex.
 ```
 repotxt git@github.com:SamuelCheng123/Myfirst.git
+repotxt https://github.com/SamuelCheng123/Myfirst.git
 ```
 txt 檔案就會自動出現在下載目錄
