@@ -6,11 +6,11 @@
 如果你使用的是 zsh，輸入以下命令：
     `code ~/.zshrc` 
 
-接下來在 zshrc 當中添加
+接下來在 zshrc 當中添加指令名稱和 python 檔案的存放位置位置
 
 ```
 function repotxt() {
-python3 /Users/samuelcheng/Desktop/Github/repo-to-text.py "$@"
+python3 /Users/{yourusername}/Desktop/Github/repo-to-text.py "$@"
 }
 ```
 
