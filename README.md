@@ -10,7 +10,7 @@
 接下來在 zshrc 當中添加指令名稱和 python 檔案的存放位置位置
 
 ```
-function gitrepo() {
+function gitrepotxt() {
 python3 /Users/{yourusername}/Desktop/Github/repo-to-text.py "$@"
 }
 ```
@@ -18,8 +18,8 @@ python3 /Users/{yourusername}/Desktop/Github/repo-to-text.py "$@"
 這樣就完成了，以後可以直接在 zsh 當中輸入想要讀取的 github repo url
 ex.
 ```
-gitrepo git@github.com:SamuelCheng123/Myfirst.git
-gitrepo https://github.com/SamuelCheng123/Myfirst.git
+gitrepotxt git@github.com:SamuelCheng123/Myfirst.git
+gitrepotxt https://github.com/SamuelCheng123/Myfirst.git
 ```
 txt 檔案就會自動出現在下載目錄
 clone 下來的 repo 會自動出現在之前在 python 檔案中設定的 `root_path` 目錄
